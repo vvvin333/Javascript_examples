@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <meta charset="utf-8" />
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script src="js/WebGLEarthAPIEx.js"></script>
+    <style>
+		html, body {
+		  padding: 0;
+		  margin: 0;
+		}
+		#earth_div{
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0; 
+		  background-color: #000000;
+		  position: absolute !important;
+		}
+
+		#buttons {
+			position: absolute !important;
+			top:10px;
+			left: 10px;
+		}
+      </style>
+      <title>Earth</title>
+    </head>
+    <body onload="initialize();">
+      
+      <div id="earth_div"></div>
+      <div id="buttons">
+        <button id="btnHome" onclick="goHome()">GO HOME</button>
+        <button id="btnCoords" onclick="showCoords()">SHOW COORDINATES</button>
+        <button id="btnZoomIn" onclick="zoomIn()">ZOOM IN</button>
+        <button id="btnZoomOut" onclick="zoomOut()">ZOOM OUT</button>
+        <button id="btnGetZoom" onclick="getZoom()">CURRENT ZOOM</button>
+      </div>
+  </body>
+</html>

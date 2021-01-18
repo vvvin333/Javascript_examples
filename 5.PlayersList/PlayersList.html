@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mid-term demo</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+    <article>
+        <h1>Weather forecast</h1>
+        <p class="class1">Cities` temperature</p>
+        
+        <h4>Adding cities</h4>
+        <table>
+  	<tr>
+    		<td><label style="width:20">Name: </label></td> <td><input id="txtName" type="text"></td>
+  	</tr>
+  	<tr>
+    		<td><label style="width:20">Temperature: </label></td> <td><input id="txtTmp" type="number"></td>
+  	</tr>
+	</table>        
+        <button onclick="addCity()">Add a city</button>
+        <hr>
+        
+        <button onclick="showCities();" >Show all cities</button>    
+        <button onclick="clearOutput();" >Clear the output</button> 
+        <hr />
+
+        <button onclick="showHottest()" >Show hottest</button> 
+        <hr>
+
+        <p id="output" class="class1">output will be here...</p>
+        
+    </article>
+    
+    <footer>
+        <p>&copy; Ivan Vinitskyi, 2020<br>
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;" 
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png" 
+                    alt="Valid HTML"></a>
+
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS"></a>
+        </p>
+    </footer>
+    
+    <!-- JavaScript run after the body items have been added to the DOM -->
+    <script src="JavaScript.js"></script> 
+</body>
+</html>

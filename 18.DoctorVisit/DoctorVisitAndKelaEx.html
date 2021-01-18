@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Doctor Visit and Kela</title>
+<style type="text/css">
+label {
+	display: block;
+	width: 10em;
+	float: left;
+}
+</style>
+
+<script src="DoctorVisitAndKelaEx.js">
+</script>
+</head>
+<body>
+	<h3>Doctor Visit and Kela</h3>
+
+	<form>
+		<p>
+			<label>Length of the visit: </label> <input type="text" name="length" id="length"
+				size="3"> min
+		
+		<p>
+			<label>Doctor’s Fee </label> <input type="text" name="doctorsFee"
+				id="doctorsFee" size="8"> euros
+		</p>
+		<p>
+			<input type="button" id="submit" value="Calculate" onClick="calculate()">
+		</p>
+	</form>
+
+	<!-- This is the target where the JavaScript will write the answer -->
+	<div id="answer"></div>
+</body>
+</html>
+
+<!-- test example:
+length = 21, doctorsFee = 69 -> Length of visit is 21 minutes. 
+						Kela reimbursement is 13.50 euros.
+length = 15, doctorsFee = 69 -> Length of visit is 15 minutes. 
+						Kela reimbursement is 11.00 euros.
+-->

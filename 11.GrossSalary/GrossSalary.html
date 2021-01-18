@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GrossSalary</title>
+<style type="text/css">
+label {
+	display: block;
+	width: 7em;
+	float: left;
+}
+</style>
+
+<script src="js/GrossSalary.js"></script>
+</head>
+<body>
+	<h3>GrossSalary </h3>
+
+	<form>
+		<p>
+			<label>Hours done: </label> <input type="number" name="hours" id="hours" size="4"> hours<br>
+			<label>Hourly salary: </label> <input type="number" name="hourlySalary" id="hourlySalary" size="12"> euros<br>
+			<input type="button" id="calculate" value="Calculate" onClick="calculateGross()">
+		</p>
+	</form>
+	<div id="grossSalary"></div>
+</body>
+</html>
