@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Game</title>
+<style>
+	label{
+		display:inline-block;
+		width: 80px; 
+		text-align: right;
+	}
+</style>
+<script src="js\Game.js">
+</script>
+</head>
+<body>
+	<h3>Game</h3>
+
+	<form>
+		<label for="bet">Bet: </label> 
+		<input type="text" name="bet" id="bet" size="3" value="1"> 
+		<input type="button" id="submit" value="Play 1 round" onClick="play()">
+	</form>
+	<form>
+		<label for="rounds">Rounds: </label> 
+		<input type="text" name="" id="rounds" size="3"> 
+		<input type="button" id="submit" value="Play" onClick="calculateProfit()">
+	</form>
+
+	<!-- This is the target where the JavaScript will write the answer -->
+	<div id="answer"></div>
+</body>
+</html>
+
+<!-- test example:
+bet = x, pips = 1 or 3 or 5 -> no pay
+bet = 2, pips = 2 or 4 -> paidBack = 2.50 
+bet = 2, pips = 6 -> paidBack = 3.00
+-->

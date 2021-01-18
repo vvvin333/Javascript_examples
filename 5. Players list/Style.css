@@ -1,0 +1,40 @@
+﻿body {
+    color: black;
+    padding: 0.1em;   /* 0.1 times the current zoom level font size */
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+h4 {
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+
+footer {
+    margin-top: 20px;   /* Keeps the footer a bit separated from main content */
+}
+
+.class1 {
+    color: navy;
+}
+
+#output {
+    color: red;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align:right;
+}
+
+/* The 'color' means color of the text */
+/* The latter rules always apply/override */
+
+/* 
+    This is how you write comments in CSS files.
+    The comment can span multiple lines
+*/
+

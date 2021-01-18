@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>String</title>
+
+<script src="js\StringEx.js"></script>
+</head>
+<body>
+	<h3>String</h3>
+
+	<form>
+		<label>Name: </label> <input type="text" name="name" id="name">
+		&nbsp;&nbsp;&nbsp; <input type="button" id="submit" value="Show"onClick="processName()">
+		<!-- not breakable space -->
+	</form>
+
+	<div id="upperCase"></div>
+	<div id="lowerCase"></div>
+	<div id="length"></div>
+	<div id="contains"></div>
+	<div id="firstCharacter"></div>
+	<div id="manyCharacters"></div>
+</body>
+</html>
+
+<!-- test example:
+name = Matti Majava -> 	               With upper case letters: MATTI MAJAVA
+						With lower case letters: matti majava
+						Character count: 12
+						Doesn’t contain the text muumi.
+						First character: M
+						First three characters: Mat
+-->
