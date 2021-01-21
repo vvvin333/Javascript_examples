@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Temperature Conversion</title>
+	<style type="text/css">
+	table {
+		text-align: right;
+	}
+	</style>
+</head>
+
+<body>
+    <form>
+        <table>
+        <tr>
+        <td>
+        <label>Conversion:</label>
+        </td>
+        <td align="left">
+        <select id="conversion">
+            <option value="celsius">Fahrenheit to Celsius</option>
+            <option value="fahrenheit">Celsius to Fahrenheit</option>
+        </select>
+        </td>
+        </tr>
+        
+        <tr>
+        <td><label>Temperature:</label></td>
+        <td><input id="temperature" type="text" /></td>
+        </tr>
+        
+        <tr>
+        <td><label>Result:</label></td>
+        <td><input id="result" type="text" readonly></td>
+        </tr>
+        </table>
+        <input type="button" onclick="convert()" id="submit" value="Convert"/>
+    </form>
+   
+    <script src="TemperatureConversion.js"></script>
+</body>
+
+</html>
